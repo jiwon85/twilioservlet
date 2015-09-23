@@ -39,7 +39,7 @@ public class TwilioServlet extends HttpServlet {
     	HttpSession session = request.getSession(true);
  
     	String phoneNum = request.getParameter("From");
-    	String message = "This message is for Angie only. Please remind her to keep her calendar clear tonight from 12AM - 1AM. :)";
+    	String message = "Hey POD members! Thanks for coming to class today. :)";
     	if(phoneNum.equals("+19567710480")){
     		message = "Hello Angie. This is an automated message reply. Reminder to keep your calendar clear tonight from 12AM - 1AM. :)";
     	}
